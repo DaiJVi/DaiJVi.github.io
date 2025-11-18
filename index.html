@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ingeniero en Redes y Seguridad</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0040W1M7V3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0040W1M7V3');
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-300 font-['Roboto',_sans-serif] overflow-x-hidden">
+    <canvas id="star-canvas" class="fixed top-0 left-0 w-full h-full -z-10"></canvas>
+
+    <header id="header" class="fixed top-0 left-0 w-full bg-slate-950/50 backdrop-blur-lg border-b border-cyan-500/20 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-white hover:text-cyan-400 transition-colors duration-300">
+                <span class="text-cyan-400">&lt;</span>N/E<span class="text-cyan-400">&gt;</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">Introducción</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Proyectos</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/90">
+            <a href="#about" class="block text-center py-3 px-4 text-sm hover:bg-cyan-900/50 transition-colors duration-300">Introducción</a>
+            <a href="#projects" class="block text-center py-3 px-4 text-sm hover:bg-cyan-900/50 transition-colors duration-300">Proyectos</a>
+            <a href="#contact" class="block text-center py-3 px-4 text-sm hover:bg-cyan-900/50 transition-colors duration-300">Contacto</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="min-h-screen flex items-center justify-center relative pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white animate-fade-in-down">
+                    Ingeniero en Análisis, Soporte <br class="hidden md:block" /> y Gestión de Redes
+                </h1>
+                <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-slate-400 animate-fade-in-up">
+                    Explorando las conexiones invisibles que sostienen el mundo digital. Un portfolio inspirado en redes de telecomunicaciones, flujos dinámicos de datos y la belleza de los quasares.
+                </p>
+                <div class="mt-10 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="#projects" class="bg-cyan-500 text-slate-950 font-bold py-3 px-8 rounded-full hover:bg-cyan-400 hover:shadow-cyan-glow transition-all duration-300">
+                        Ver mis Proyectos
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="absolute bottom-10 animate-bounce">
+                <i data-lucide="arrow-down-circle" class="w-10 h-10 text-cyan-400/70"></i>
+            </a>
+        </section>
+
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl font-bold text-white mb-4">Introducción Personal</h2>
+                    <p class="text-slate-400 mb-6">
+                        Con más de 5 años de experiencia en análisis, soporte y gestión de redes, mi trayectoria se ha centrado en optimizar infraestructuras críticas en entornos empresariales. Me especializo en crear conexiones robustas y seguras, previniendo interrupciones y maximizando la eficiencia de los flujos de datos.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="skill">
+                            <h3 class="font-semibold text-white">Soporte Técnico y Networking</h3>
+                            <p class="text-sm text-slate-400">Resolución proactiva, mantenimiento y configuración avanzada de protocolos (TCP/IP, BGP, VLANs).</p>
+                        </div>
+                        <div class="skill">
+                            <h3 class="font-semibold text-white">Gestión de Infraestructura</h3>
+                             <p class="text-sm text-slate-400">Optimización y escalabilidad de servidores y nodos, con herramientas de monitoreo y orquestación.</p>
+                        </div>
+                        <div class="skill">
+                            <h3 class="font-semibold text-white">Seguridad de la Información</h3>
+                            <p class="text-sm text-slate-400">Implementación de firewalls, encriptación y auditorías basadas en marcos como NIST.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                    <img src="https://r2.flowith.net/files/jpeg/GUB7L-telecom_network_diagram_ghibli_quasar_index_0@1024x1024.jpeg" alt="Diagrama de red de telecomunicaciones" class="rounded-2xl shadow-2xl shadow-cyan-900/30 object-cover w-full h-full aspect-square">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 md:py-32 bg-slate-950/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-white text-center mb-12 animate-on-scroll">Proyectos Destacados</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="p-6 flex flex-col h-full">
+                            <div class="h-48 mb-4 flex items-center justify-center bg-slate-900 rounded-lg overflow-hidden">
+                                <div class="node-diagram">
+                                    <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="node n4"></div>
+                                    <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Soporte Técnico Avanzado</h3>
+                            <p class="text-slate-400 mt-2 text-sm flex-grow">Resolución de incidencias en redes empresariales, con análisis de paquetes y automatización para minimizar downtime.</p>
+                            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                                <span class="tech-tag">Wireshark</span><span class="tech-tag">Python</span><span class="tech-tag">Zabbix</span><span class="tech-tag">Ansible</span>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-4">
+                                <a href="#" class="action-link-primary"><i data-lucide="github" class="w-4 h-4"></i>Repositorio</a>
+                                <button class="action-link-secondary read-more-button">Leer Más <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                            </div>
+                        </div>
+                        <div class="details-content">
+                            <div class="p-6 pt-2">
+                                <h4 class="font-semibold text-white mb-2">Avances del Proyecto</h4>
+                                <div class="space-y-3 text-sm">
+                                    <p class="text-slate-400">Hito 1: Implementación de monitoreo. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 2: Creación de alertas automáticas. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 3: Dashboard de incidencias. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll" style="animation-delay: 0.2s;">
+                         <div class="p-6 flex flex-col h-full">
+                            <img src="https://r2.flowith.net/files/png/68KXI-gestión_infraestructura_redes_ghibli_quasar_index_0@1024x1024.png" alt="Gestión de Infraestructura" class="h-48 w-full object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold text-white">Gestión de Infraestructura</h3>
+                            <p class="text-slate-400 mt-2 text-sm flex-grow">Optimización de servidores y nodos en entornos híbridos (on-premise/nube) con Docker y Kubernetes para alta escalabilidad.</p>
+                            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                                <span class="tech-tag">Docker</span><span class="tech-tag">Kubernetes</span><span class="tech-tag">Terraform</span><span class="tech-tag">AWS</span>
+                            </div>
+                             <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-4">
+                                <a href="#" class="action-link-primary"><i data-lucide="github" class="w-4 h-4"></i>Repositorio</a>
+                                <button class="action-link-secondary read-more-button">Leer Más <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                            </div>
+                        </div>
+                        <div class="details-content">
+                            <div class="p-6 pt-2">
+                                <h4 class="font-semibold text-white mb-2">Avances del Proyecto</h4>
+                                <div class="space-y-3 text-sm">
+                                    <p class="text-slate-400">Hito 1: Despliegue de contenedores. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 2: Orquestación y escalado. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 3: Pruebas de carga y rendimiento. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card animate-on-scroll" style="animation-delay: 0.4s;">
+                        <div class="p-6 flex flex-col h-full">
+                            <img src="https://r2.flowith.net/files/jpeg/4W64Y-informacion_seguridad_redes_ghibli_index_1@1024x1024.jpeg" alt="Seguridad de la Información" class="h-48 w-full object-cover rounded-lg mb-4">
+                            <h3 class="text-xl font-bold text-white">Seguridad de la Información</h3>
+                            <p class="text-slate-400 mt-2 text-sm flex-grow">Implementación de medidas de seguridad como VPNs, IDS/IPS y políticas Zero-Trust para proteger la integridad de datos críticos.</p>
+                            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                                <span class="tech-tag">OpenVPN</span><span class="tech-tag">Snort</span><span class="tech-tag">NIST Framework</span><span class="tech-tag">pfSense</span>
+                            </div>
+                            <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-4">
+                                <a href="#" class="action-link-primary"><i data-lucide="github" class="w-4 h-4"></i>Repositorio</a>
+                                <button class="action-link-secondary read-more-button">Leer Más <i data-lucide="chevron-down" class="w-4 h-4"></i></button>
+                            </div>
+                        </div>
+                         <div class="details-content">
+                             <div class="p-6 pt-2">
+                                <h4 class="font-semibold text-white mb-2">Avances del Proyecto</h4>
+                                <div class="space-y-3 text-sm">
+                                    <p class="text-slate-400">Hito 1: Configuración de firewalls. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 2: Simulación de amenazas. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                    <p class="text-slate-400">Hito 3: Auditoría y reporte de políticas. <span class="text-cyan-500">[En desarrollo]</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center animate-on-scroll">
+                <h2 class="text-3xl font-bold text-white">Conecta Conmigo</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-400">
+                    Estoy abierto a discutir colaboraciones, proyectos o cualquier oportunidad en el campo de las redes y la seguridad.
+                </p>
+                <div class="mt-8 flex justify-center items-center gap-6 text-cyan-400">
+                    <a href="mailto:tu-email@ejemplo.com" class="contact-link"><i data-lucide="mail" class="w-7 h-7"></i></a>
+                    <a href="#" class="contact-link"><i data-lucide="linkedin" class="w-7 h-7"></i></a>
+                    <a href="#" class="contact-link"><i data-lucide="github" class="w-7 h-7"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer id="footer" class="py-6 border-t border-cyan-500/10">
+        <div class="container mx-auto px-6 text-center text-sm text-slate-500">
+            <p>Copyright &copy; 2025. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
